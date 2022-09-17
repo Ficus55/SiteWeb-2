@@ -902,6 +902,7 @@ body a.active,
     margin: 0px 0px 30px 0px;
     flex: 0 1 350px;
     transition: .22s;
+    border: 2px solid transparent;
 }
 
 .our-taxi-item:hover {
