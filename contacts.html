@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <title>Итоговое занятие по Bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-taxi.html">Our fleet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+                <form name="searchForm" method="post" action="" role="search" class="d-flex">
+                    <input name="searchField" type="search" class="form-control me-2" aria-label="Search"
+                        placeholder="Search" required>
+                    <button name="submit" type="submit" class="btn btn-outline-warning">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="breadcrumbs-custom bg-image">
+        <div class="container d-flex flex-column justify-content-around h-100">
+            <h6 class="text-uppercase breadcrumbs-title fw-bold fs-18-16">Pages</h6>
+            <h1 class="breadcrumbs-title fs-60-28">Contacts</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item fs-18-16"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item fs-18-16" aria-current="page">Contacts</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section contact">
+        <div class="container">
+            <div class="row justify-content-xl-between flex-lg-row-reverse">
+                <div class="col-lg-4 col-xl-3">
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-12">
+                            <h4 class="fs-24-18">Address</h4>
+                            <p>
+                                <a class="fs-18-16" href="#">
+                                    8734 S. Ashland Ave,
+                                    <br>San Diego, CA 60608-2013, US
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-sm-4 col-lg-12">
+                            <h4 class="fs-24-18">Phones</h4>
+                            <ul>
+                                <li>
+                                    <a class="fs-18-16" href="#">1-800-1234-567</a>
+                                </li>
+                                <li>
+                                    <a class="fs-18-16" href="#">1-800-8764-098</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-lg-12">
+                            <h4 class="fs-24-18">E-mails</h4>
+                            <ul>
+                                <li>
+                                    <a class="fs-18-16" href="#">info@demolink.org</a>
+                                </li>
+                                <li>
+                                    <a class="fs-18-16" href="#">mail@demolink.org</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 class="fs-48-28">Get in Touch</h2>
+                    <form name="contactPageForm" method="post" action="#" class="contact-page-form">
+                        <div class="row contact-form">
+                            <div class="col-md-6">
+                                <input name="firstName" type="text" class="form-input" id="contact-first-name" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input name="lastName" type="text" class="form-input" id="contact-last-name" placeholder="Last Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input name="email" type="email" class="form-input" id="contact-email" placeholder="E-mail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input name="phone" type="text" class="form-input" id="contact-phone" placeholder="Phone" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" maxlength="500" class="form-input" id="contact-message" cols="90" rows="4" placeholder="Message" required></textarea>
+                                <div class="counter-symbols-contact-page">Characters <span></span> left</div>
+                            </div>
+                            <div class="col-12">
+                                <button name="submit" type="submit" class="btn-taxi-white btn-background-slide-white text-uppercase fw-bold">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429154.7658834625!2d-117.38985072504515!3d32.82481598318881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2z0KHQsNC9LdCU0LjQtdCz0L4sINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2s!4v1661070286930!5m2!1sru!2s"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <section class="footer-modern">
+        <div class="container">
+            <div class="footer-modern-main row justify-content-between">
+                <div class="col-md-4 col-sm-6">
+                    <h4>Twitter Feed</h4>
+                    <div class="tweet-thin-group mt-5">
+                        <article class="tweet-thin d-flex">
+                            <i class="fa-brands fa-twitter"></i>
+                            <div class="twitter-thin-main ms-4">
+                                <p>
+                                    Brave #Theme - Multipurpose #HTML Website Template - https://goo.gl/pzJx6G
+                                    #webdesign
+                                </p>
+                                <p class="text-white-dark mt-2">
+                                    2 days ago
+                                </p>
+                            </div>
+                        </article>
+                        <article class="tweet-thin d-flex mt-3">
+                            <i class="fa-brands fa-twitter"></i>
+                            <div class="twitter-thin-main ms-4">
+                                <p>
+                                    It is Proved That the #Discount Can Cheer You Up! Catch a Chance to Save 35% OFF Any
+                                    #HTML Template!
+                                </p>
+                                <p class="text-white-dark mt-2">
+                                    2 days ago
+                                </p>
+                            </div>
+                        </article>
+                        <article class="tweet-thin d-flex mt-3">
+                            <i class="fa-brands fa-twitter"></i>
+                            <div class="twitter-thin-main ms-4">
+                                <p>
+                                    Easy Steps to Create Cool #Vector Art on Your #iPhone https://goo.gl/QH3xAc
+                                </p>
+                                <p class="text-white-dark mt-2">
+                                    2 days ago
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <h4>Get in Touch</h4>
+                    <form name="contactForm" method="post" action="" class="rd-form mt-5">
+                        <input name="name" type="text" class="form-input" placeholder="Your name" required>
+                        <input name="email" type="email" class="form-input" placeholder="E-mail" required>
+                        <textarea name="message" id="" class="form-input" maxlength="500" cols="30" rows="10"
+                            placeholder="Message" required></textarea>
+                        <div class="counter-symbols">Characters <span></span> left</div>
+                        <button name="send" type="submit"
+                            class="btn-taxi btn-background-slide text-uppercase fw-bold">send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-modern-aside mt-5">
+                <div class="footer-body d-flex justify-content-between align-items-center flex-wrap">
+                    <p class="rights">
+                        <span>©&nbsp;</span>
+                        <span class="copyright-year"></span>
+                        <span>All Rights Reserved. Design by Ficus</span>
+                    </p>
+                    <div class="footer-social">
+                        <div class="group-middle d-flex justify-content-end">
+                            <a class="link-social-2 fa-brands fa-facebook-f" href="#"></a>
+                            <a class="link-social-2 fa-brands fa-twitter" href="#"></a>
+                            <a class="link-social-2 fa-brands fa-google" href="#"></a>
+                            <a class="link-social-2 fa-brands fa-instagram" href="#"></a>
+                            <a class="link-social-2 fa-brands fa-linkedin-in" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" id="ui-to-top" class="ui-to-top fa-solid fa-angle-up"></a>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
